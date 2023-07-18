@@ -1,4 +1,4 @@
-name: Build OpenWrt
+name: Build OpenWrt-LEDE
 # 手动触发
 on: workflow_dispatch
 jobs:
