@@ -17,8 +17,11 @@ jobs:
         ./scripts/feeds update -a
         ./scripts/feeds install -a
         make defconfig
+        cat .config
+        pwd
     - name: Build
       run: |
+        pwd
         make download -j8
         make V=s -j1
     - name : Upload artifact
